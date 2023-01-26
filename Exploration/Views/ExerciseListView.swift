@@ -7,21 +7,20 @@
 
 import SwiftUI
 
-struct ExerciseList: View {
-    @EnvironmentObject var workoutData: WorkoutData
-
+struct ExerciseListView: View {
+    @ObservedObject var workoutData: WorkoutViewModel
     @Environment(\.dismiss) var dismiss
     var body: some View {
-        List(Array(Exercises.keys), id: \.self) { key in
+        List(AvailableExercises, id: \.name) { exerciseType in
             Button(action: {
-                workoutData.exercises.append(Exercises[key]!.init())
+                workoutData.addExercise(ofType: exerciseType)
                 dismiss()
             }, label: {
 
                 HStack {
-                    Text(key)
+                    Text(exerciseType.name)
                     Spacer()
-                    Image(Exercises[key]!.init().image)
+                    Image(exerciseType.image)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 100)
@@ -32,8 +31,8 @@ struct ExerciseList: View {
 }
 
 struct ExerciseList_Previews: PreviewProvider {
+    @State static var workoutData: WorkoutViewModel = WorkoutViewModel(exerciseViewModels: [])
     static var previews: some View {
-        ExerciseList()
-            .environmentObject(WorkoutData(exercises: [BenchPress()]))
+        ExerciseListView(workoutData: workoutData)
     }
 }

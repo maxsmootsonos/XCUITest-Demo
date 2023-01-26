@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var workoutData: WorkoutData
     var body: some View {
-        Workout()
+        WorkoutView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(WorkoutData(exercises: []))
     }
 }

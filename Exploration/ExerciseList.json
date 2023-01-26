@@ -1,0 +1,17 @@
+{
+    "exercises" : [
+        {
+            "name" : "Bench Press",
+            "image": "benchpress"
+        },
+        {
+            "name" : "Squat",
+            "image" : "squat"
+        }
+
+
+
+
+
+    ]
+}
