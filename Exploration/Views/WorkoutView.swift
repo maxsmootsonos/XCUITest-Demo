@@ -34,7 +34,7 @@ struct WorkoutView: View {
                 }
 
             }
-            .navigationTitle("Workout")
+            .navigationTitle("Workout (v1)")
         }
     }
 }
