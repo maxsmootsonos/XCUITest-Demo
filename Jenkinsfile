@@ -11,6 +11,10 @@ pipeline {
             sh "./process_results.sh"
             }
         }
-        
+    }
+    post {
+        always {
+            junit 'test-reports/*.xml'
+        }
     }
 }
