@@ -20,6 +20,8 @@ struct WorkoutView: View {
                             ExerciseDetailView(data:exerciseViewModel)
                         } label:{
                                 Text(exerciseViewModel.name)
+                                .accessibilityIdentifier(exerciseViewModel.name)
+
                         }
                     }
                     .onDelete(perform: workoutData.removeExercise)
@@ -28,12 +30,12 @@ struct WorkoutView: View {
                     ExerciseListView(workoutData: workoutData )
                 } label : {
                     Text("Add Exercise")
+                        .accessibilityIdentifier("Add Exercise Button")
                 }
 
             }
             .navigationTitle("Workout")
         }
-        .accessibilityLabel("Workout NavigationView")
     }
 }
 

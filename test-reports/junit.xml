@@ -1,0 +1,19 @@
+<testsuites name="PARALLEL_TESTS" tests="9" failures="0">
+    <testsuite name="WorkoutViewModel_Test" tests="2" failures="0">
+        <testcase classname="WorkoutViewModel_Test" name="testAddExercise" time="0.001" />
+        <testcase classname="WorkoutViewModel_Test" name="testRemoveExercise" time="0.001" />
+    </testsuite>
+    <testsuite name="ExerciseDetailViewModel_Test" tests="2" failures="0">
+        <testcase classname="ExerciseDetailViewModel_Test" name="testAddSet" time="0.001" />
+        <testcase classname="ExerciseDetailViewModel_Test" name="testRemoveSet" time="0.001" />
+    </testsuite>
+    <testsuite name="WorkoutViewUITests" tests="3" failures="0">
+        <testcase classname="WorkoutViewUITests" name="testAddExerciseButton" time="8.879" />
+        <testcase classname="WorkoutViewUITests" name="testAddExerciseToWorkout" time="4.210" />
+        <testcase classname="WorkoutViewUITests" name="testTapExercise" time="4.875" />
+    </testsuite>
+    <testsuite name="ExerciseDetailView_UITests" tests="2" failures="0">
+        <testcase classname="ExerciseDetailView_UITests" name="testAddSet" time="6.169" />
+        <testcase classname="ExerciseDetailView_UITests" name="testRemoveSet" time="6.946" />
+    </testsuite>
+</testsuites>

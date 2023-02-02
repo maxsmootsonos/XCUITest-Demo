@@ -26,7 +26,9 @@ struct ExerciseListView: View {
                         .frame(width: 100)
                 }
             })
+            .accessibilityIdentifier("\(exerciseType.name)")
         }
+        .navigationTitle("Choose an Exercise")
     }
 }
 

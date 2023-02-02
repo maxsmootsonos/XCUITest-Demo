@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let AvailableExercises: [ExerciseType] = [BenchPress(), Squat()]
+let AvailableExercises: [ExerciseType] = [BenchPress(), Squat(), Chinup()]
 
 
 // Will be passed as an environment object
@@ -42,3 +42,7 @@ struct Squat: ExerciseType {
     var name = "Squat"
 }
 
+struct Chinup: ExerciseType {
+    var name = "Chin up"
+    var image =  "chinup"
+}

@@ -14,6 +14,7 @@ struct ExerciseDetailView: View {
         VStack{
             Text(data.name)
                 .font(.title)
+                .accessibilityIdentifier("ExerciseDetailView Title")
             Text("Sets")
                 .font(.title2)
                 .frame(width: 300, alignment: .leading)
@@ -23,6 +24,7 @@ struct ExerciseDetailView: View {
 
                     HStack {
                         TextField("0 lbs", text: exerciseSet.weight).keyboardType(.numberPad)
+                            .accessibilityIdentifier("weight")
                         Divider()
                         TextField("0 reps", text: exerciseSet.reps).keyboardType(.numberPad)
 
@@ -39,6 +41,7 @@ struct ExerciseDetailView: View {
                     .scaledToFit()
                     .frame(width:20)
             }
+            .accessibilityIdentifier("Add Set")
             Spacer()
             Image(data.image)
                 .resizable()

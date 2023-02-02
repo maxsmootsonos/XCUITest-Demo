@@ -1,0 +1,70 @@
+Command line invocation:
+    /Applications/Xcode_14.1.app/Contents/Developer/usr/bin/xcodebuild test -scheme Exploration -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14"
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+Build settings from command line:
+    SDKROOT = iphonesimulator16.1
+
+Prepare packages
+
+Computing target dependency graph and provisioning inputs
+
+Create build description
+Build description signature: 5d27d00fe9113becec719b78599612e8
+Build description path: /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/XCBuildData/5d27d00fe9113becec719b78599612e8-desc.xcbuild
+
+note: Building targets in dependency order
+Ld /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest/ExplorationTests normal (in target 'ExplorationTests' from project 'Exploration')
+    cd /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration
+    /Applications/Xcode_14.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target arm64-apple-ios16.1-simulator -bundle -isysroot /Applications/Xcode_14.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.1.sdk -L/Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/EagerLinkingTBDs -L/Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator -L/Applications/Xcode_14.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/EagerLinkingTBDs -F/Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode_14.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode_14.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.1.sdk/Developer/Library/Frameworks -filelist /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/Exploration.build/Debug-iphonesimulator/ExplorationTests.build/Objects-normal/arm64/ExplorationTests.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -dead_strip -bundle_loader /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app//Exploration -Xlinker -object_path_lto -Xlinker /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/Exploration.build/Debug-iphonesimulator/ExplorationTests.build/Objects-normal/arm64/ExplorationTests_lto.o -Xlinker -export_dynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -L/Applications/Xcode_14.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/Exploration.build/Debug-iphonesimulator/ExplorationTests.build/Objects-normal/arm64/ExplorationTests.swiftmodule -framework XCTest -Xlinker -no_adhoc_codesign -Xlinker -dependency_info -Xlinker /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/Exploration.build/Debug-iphonesimulator/ExplorationTests.build/Objects-normal/arm64/ExplorationTests_dependency_info.dat -o /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest/ExplorationTests
+
+ExtractAppIntentsMetadata (in target 'ExplorationTests' from project 'Exploration')
+    cd /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration
+    /Applications/Xcode_14.1.app/Contents/Developer/usr/bin/appintentsmetadataprocessor --output /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest --toolchain-dir /Applications/Xcode_14.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name ExplorationTests --source-files /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration/Exploration/Views/ExerciseListView.swift /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration/Exploration/Views/ExerciseDetailView.swift /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration/Exploration/Views/WorkoutView.swift /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration/Exploration/ViewModels/ExerciseDetailViewModel.swift /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration/Exploration/ViewModels/WorkoutViewModel.swift /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration/ExplorationTests/ExerciseDetailViewModel_Test.swift /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration/ExplorationTests/WorkoutViewModel_Test.swift --sdk-root /Applications/Xcode_14.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.1.sdk --target-triple arm64-apple-ios16.1-simulator --binary-file /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest/ExplorationTests --dependency-file /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/Exploration.build/Debug-iphonesimulator/ExplorationTests.build/Objects-normal/arm64/ExplorationTests_dependency_info.dat --stringsdata-file /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/Exploration.build/Debug-iphonesimulator/ExplorationTests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata
+note: Metadata extraction skipped. No AppIntents.framework dependency found. (in target 'ExplorationTests' from project 'Exploration')
+
+CopySwiftLibs /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest (in target 'ExplorationTests' from project 'Exploration')
+    cd /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest/ExplorationTests --scan-folder /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest/Frameworks --scan-folder /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest/PlugIns --scan-folder /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest/SystemExtensions --scan-folder /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode_14.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode_14.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode_14.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/Exploration.build/Debug-iphonesimulator/ExplorationTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+CodeSign /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest (in target 'ExplorationTests' from project 'Exploration')
+    cd /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration
+    
+    Signing Identity:     "-"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app/PlugIns/ExplorationTests.xctest
+
+CodeSign /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app (in target 'Exploration' from project 'Exploration')
+    cd /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration
+    
+    Signing Identity:     "-"
+    
+    /usr/bin/codesign --force --sign - --entitlements /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Intermediates.noindex/Exploration.build/Debug-iphonesimulator/Exploration.build/Exploration.app.xcent --timestamp\=none --generate-entitlement-der /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app
+/Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app: replacing existing signature
+
+Validate /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app (in target 'Exploration' from project 'Exploration')
+    cd /Users/msmoot/Developer/Learning\ IOS\ dev/Exploration
+    builtin-validationUtility /Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Build/Products/Debug-iphonesimulator/Exploration.app
+
+
+Test session results, code coverage, and logs:
+	/Users/msmoot/Library/Developer/Xcode/DerivedData/Exploration-hjdwxrwufrvsjegkorfqcaagamtz/Logs/Test/Test-Exploration-2023.02.01_11-06-26--0500.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started
+Test suite 'WorkoutViewUITests' started on 'Clone 1 of iPhone 14 - ExplorationUITests-Runner (35876)'
+Test suite 'WorkoutViewModel_Test' started on 'Clone 2 of iPhone 14 - Exploration (35891)'
+Test case 'WorkoutViewModel_Test.testAddExercise()' passed on 'Clone 2 of iPhone 14 - Exploration (35891)' (0.001 seconds)
+Test case 'WorkoutViewModel_Test.testRemoveExercise()' passed on 'Clone 2 of iPhone 14 - Exploration (35891)' (0.001 seconds)
+Test suite 'ExerciseDetailViewModel_Test' started on 'Clone 2 of iPhone 14 - Exploration (35891)'
+Test case 'ExerciseDetailViewModel_Test.testAddSet()' passed on 'Clone 2 of iPhone 14 - Exploration (35891)' (0.001 seconds)
+Test case 'ExerciseDetailViewModel_Test.testRemoveSet()' passed on 'Clone 2 of iPhone 14 - Exploration (35891)' (0.001 seconds)
+Test case 'WorkoutViewUITests.testAddExerciseButton()' passed on 'Clone 1 of iPhone 14 - ExplorationUITests-Runner (35876)' (8.879 seconds)
+Test case 'WorkoutViewUITests.testAddExerciseToWorkout()' passed on 'Clone 1 of iPhone 14 - ExplorationUITests-Runner (35876)' (4.210 seconds)
+Test case 'WorkoutViewUITests.testTapExercise()' passed on 'Clone 1 of iPhone 14 - ExplorationUITests-Runner (35876)' (4.875 seconds)
+Test suite 'ExerciseDetailView_UITests' started on 'Clone 1 of iPhone 14 - ExplorationUITests-Runner (35876)'
+Test case 'ExerciseDetailView_UITests.testAddSet()' passed on 'Clone 1 of iPhone 14 - ExplorationUITests-Runner (35876)' (6.169 seconds)
+Test case 'ExerciseDetailView_UITests.testRemoveSet()' passed on 'Clone 1 of iPhone 14 - ExplorationUITests-Runner (35876)' (6.946 seconds)
